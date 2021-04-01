@@ -1,0 +1,23 @@
+{
+  "verify": {
+    "commands": ["make verify"]
+  },
+  "build": {
+    "commands": ["make build"],
+    "buildDir": "./built"
+  },
+  "tests": {
+    "qual": [
+      {
+        "name": "End to End Tests",
+        "commands": ["make test-e2e"]
+      }
+    ],
+    "prod": [
+      {
+        "name": "Smoke Tests",
+        "commands": ["make test-smoke"]
+      }
+    ]
+  }
+}
